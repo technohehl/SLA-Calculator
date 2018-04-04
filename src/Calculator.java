@@ -14,10 +14,10 @@ public class Calculator {
 	private JPanel panel;
 	private JLabel lblNewLabel;
 	private JLabel lblNewLabel_1;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
+	private JTextField sla;
+	private JTextField day;
+	private JTextField month;
+	private JTextField year;
 	private JLabel lblPerYear;
 	private JLabel lblPerMonth;
 	private JLabel lblPerDay;
@@ -61,9 +61,9 @@ public class Calculator {
 		lblNewLabel = new JLabel("SLA level");
 		panel.add(lblNewLabel);
 		
-		textField = new JTextField();
-		panel.add(textField);
-		textField.setColumns(10);
+		sla = new JTextField();
+		panel.add(sla);
+		sla.setColumns(10);
 		
 		panel_1 = new JPanel();
 		frame.getContentPane().add(panel_1);
@@ -75,26 +75,26 @@ public class Calculator {
 		lblPerDay = new JLabel("per day");
 		panel_1.add(lblPerDay);
 		
-		textField_1 = new JTextField();
-		textField_1.setEditable(false);
-		panel_1.add(textField_1);
-		textField_1.setColumns(10);
+		day = new JTextField();
+		day.setEditable(false);
+		panel_1.add(day);
+		day.setColumns(10);
 		
 		lblPerMonth = new JLabel("per month");
 		panel_1.add(lblPerMonth);
 		
-		textField_2 = new JTextField();
-		textField_2.setEditable(false);
-		panel_1.add(textField_2);
-		textField_2.setColumns(10);
+		month = new JTextField();
+		month.setEditable(false);
+		panel_1.add(month);
+		month.setColumns(10);
 		
 		lblPerYear = new JLabel("per year");
 		panel_1.add(lblPerYear);
 		
-		textField_3 = new JTextField();
-		textField_3.setEditable(false);
-		panel_1.add(textField_3);
-		textField_3.setColumns(10);
+		year = new JTextField();
+		year.setEditable(false);
+		panel_1.add(year);
+		year.setColumns(10);
 	}
 
 }
