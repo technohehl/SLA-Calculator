@@ -6,6 +6,9 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Calculator {
 
@@ -21,6 +24,8 @@ public class Calculator {
 	private JLabel lblPerYear;
 	private JLabel lblPerMonth;
 	private JLabel lblPerDay;
+	private JButton calculate;
+	private JPanel panel_2;
 
 	/**
 	 * Launch the application.
@@ -64,6 +69,17 @@ public class Calculator {
 		sla = new JTextField();
 		panel.add(sla);
 		sla.setColumns(10);
+		
+		panel_2 = new JPanel();
+		panel.add(panel_2);
+		panel_2.setLayout(new GridLayout(0, 1, 0, 0));
+		
+		calculate = new JButton("Calculate");
+		panel_2.add(calculate);
+		calculate.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		
 		panel_1 = new JPanel();
 		frame.getContentPane().add(panel_1);
