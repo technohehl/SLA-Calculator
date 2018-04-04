@@ -83,6 +83,12 @@ public class Calculator {
 				 */
 				float sla_level;
 				sla_level = Float.valueOf(sla.getText().replace(",", "."));
+				/*
+				 * secondes of day, month, year
+				 */
+				float day = 60 * 60 * 24;
+				float month = day * 28;
+				float year = month * 12;
 			}
 		});
 		
