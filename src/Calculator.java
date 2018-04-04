@@ -1,20 +1,11 @@
 import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import java.awt.FlowLayout;
-import javax.swing.JTextField;
-import javax.swing.BoxLayout;
-import java.awt.BorderLayout;
-import javax.swing.JPanel;
 import java.awt.GridLayout;
+
+import javax.swing.BoxLayout;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JMenuBar;
-import java.awt.Canvas;
-import java.awt.GridBagLayout;
-import javax.swing.SwingConstants;
-import java.awt.Component;
-import javax.swing.Box;
-import javax.swing.JTextPane;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 public class Calculator {
 
