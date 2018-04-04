@@ -78,6 +78,11 @@ public class Calculator {
 		panel_2.add(calculate);
 		calculate.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				/*
+				 * Fetch SLA level from field and convert all "," to "."
+				 */
+				float sla_level;
+				sla_level = Float.valueOf(sla.getText().replace(",", "."));
 			}
 		});
 		
