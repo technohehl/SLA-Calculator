@@ -82,13 +82,19 @@ public class Calculator {
 				 * Fetch SLA level from field and convert all "," to "."
 				 */
 				float sla_level;
-				sla_level = Float.valueOf(sla.getText().replace(",", "."));
+				sla_level = Float.valueOf(sla.getText().replace(",", "."))/100;
 				/*
-				 * secondes of day, month, year
+				 * seconds of day, month, year
 				 */
 				float day = 60 * 60 * 24;
 				float month = day * 28;
 				float year = month * 12;
+				/*
+				 * day
+				 */
+				float downtime_day = day * sla_level;
+				float downtime_month = month * sla_level;
+				float downtime_year = year * sla_level;
 			}
 		});
 		
